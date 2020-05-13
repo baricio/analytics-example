@@ -4,10 +4,6 @@ import logo from './logo.svg';
 import './App.css';
 import {Link} from 'react-router-dom'
 
-const trackingId = "UA-115320538-3"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.pageview('/');
-
 function clickLink() {
   ReactGA.event({
     category: 'Link',
@@ -24,7 +20,7 @@ function App() {
         <p>
           Hello! lets try some events.
         </p>
-        <Link to="/about" onClick={clickLink()} >Know about this</Link>
+        <Link to="/about" onClick={clickLink} >Know about this</Link>
       </header>
     </div>
   );

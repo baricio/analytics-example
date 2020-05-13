@@ -1,11 +1,6 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import {Link} from 'react-router-dom';
 import './App.css';
-
-const trackingId = "UA-115320538-3"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.pageview('/about');
 
 function About() {
   return (
