@@ -8,6 +8,14 @@ const trackingId = "UA-115320538-3"; // Replace with your Google Analytics track
 ReactGA.initialize(trackingId);
 ReactGA.pageview('/');
 
+function clickLink() {
+  ReactGA.event({
+    category: 'Link',
+    action: 'click',
+    label: 'go to about'
+  });
+}
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +24,7 @@ function App() {
         <p>
           Hello! lets try some events.
         </p>
-        <Link to="/about" >Know about this</Link>
+        <Link to="/about" onClick={clickLink()} >Know about this</Link>
       </header>
     </div>
   );
