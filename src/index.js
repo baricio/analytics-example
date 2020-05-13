@@ -7,10 +7,14 @@ import About from './About';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import { createBrowserHistory } from "history";
+import TagManager from 'react-gtm-module'
 
-const trackingId = "UA-115320538-3";
 const history = createBrowserHistory();
-ReactGA.initialize(trackingId);
+const tagManagerArgs = {
+  gtmId: process.env.REACT_APP_TRACKING_TAG_ID
+}
+ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+TagManager.initialize(tagManagerArgs)
 
 // Initialize google analytics page view tracking
 history.listen(location => {
