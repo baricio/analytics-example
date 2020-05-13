@@ -16,7 +16,7 @@ function App() {
         <p>
           Hello! lets try some events.
         </p>
-        <Link to="/about" onClick={ga('send', 'event', 'link', 'click', 'about page')} >Know about this</Link>
+        <Link to="/about" >Know about this</Link>
       </header>
     </div>
   );
