@@ -10,7 +10,7 @@ function About() {
         <p>
           Hello! this page is an example for use analytics
         </p>
-        <Link to="/">Back to home</Link>
+        <Link to="/" className="navigate">Back to home</Link>
       </header>
     </div>
   );

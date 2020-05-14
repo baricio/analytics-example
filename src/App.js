@@ -20,7 +20,7 @@ function App() {
         <p>
           Hello! lets try some events.
         </p>
-        <Link to="/about" onClick={clickLink} >Know about this</Link>
+        <Link to="/about" className="navigate" onClick={clickLink} >Know about this</Link>
       </header>
     </div>
   );
