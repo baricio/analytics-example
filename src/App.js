@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello! lets try some events.
+          Hello! lets try Google Analytics.
         </p>
         <Link to="/about" className="navigate" onClick={clickLink} >Know about this</Link>
       </header>

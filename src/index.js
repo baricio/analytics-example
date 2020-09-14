@@ -18,7 +18,7 @@ TagManager.initialize(tagManagerArgs)
 
 // Initialize google analytics page view tracking
 history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.set({ page: location.pathname + location.search }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
 
